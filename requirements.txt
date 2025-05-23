@@ -1,0 +1,28 @@
+# ADK dependencies
+google-adk>=0.1.0
+
+# Google Cloud dependencies
+google-cloud-firestore>=2.11.0
+google-cloud-storage>=2.10.0
+google-genai>=0.1.0
+
+# Core dependencies
+python-dotenv>=1.0.0
+asyncio>=3.4.3
+aiohttp>=3.8.0
+
+# Data processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Logging and monitoring
+structlog>=23.1.0
+
+# Testing (optional)
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Development tools (optional)
+black>=23.7.0
+flake8>=6.1.0
+mypy>=1.5.0
