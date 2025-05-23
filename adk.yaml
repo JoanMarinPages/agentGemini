@@ -1,0 +1,42 @@
+# ADK Configuration File
+# https://google.github.io/adk-docs/
+
+name: agentGemini
+version: 1.0.0
+description: Agente inteligente para ventas de maquinaria agrícola
+
+# Agent configuration
+agent:
+  entry_point: agent.py
+  root_agent: root_agent
+  
+# Model configuration
+model:
+  name: gemini-2.0-flash
+  temperature: 0.7
+  max_tokens: 8192
+
+# Session configuration
+session:
+  service: InMemorySessionService  # or VertexAiSessionService for production
+  ttl: 3600  # 1 hour
+
+# Environment
+environment:
+  python_version: "3.10"
+  
+# Development settings
+development:
+  debug: true
+  reload: true
+  port: 8080
+
+# Production settings
+production:
+  debug: false
+  workers: 4
+  
+# Logging
+logging:
+  level: INFO
+  format: json
